@@ -3,11 +3,39 @@ body {
     margin: 0 auto;
     text-align: center;
     font-family: 'PT Sans Narrow', Arial, sans-serif;
-    text-transform: uppercase;
+}
+
+header {
+	text-align: center;
+	background: url('http://dash.ga.co/assets/jeff-bg.png');
+	background-size: cover;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+}
+header h1 {
+	color: white;
+}
+
+.logo {
+	size: absolute;
+	vertical-align: center;
+}
+
+li a, a:visited {
+	color: white;
+}
+
+a:hover {
+	color: f29b03;
 }
 
 #content {
     overflow: auto;
+}
+
+#nav  li {
+	margin: 0 0 5px 0;
 }
 
 #nav, #feature, #footer {
@@ -24,7 +52,7 @@ body {
     margin-right: 0%;
 }
 
-#nav, #footer {
+#footer {
     background-color: #efefef;
     padding: 0.5em 0;
 }
@@ -38,4 +66,15 @@ body {
 li {
     display: inline;
     padding: 5px;
+}
+
+@media (max-width: 500px) {
+	h1 {
+		font-size: 36px;
+		padding: 5px;
+	}
+	li {
+		padding: 5px;
+		display: block;
+	}
 }
