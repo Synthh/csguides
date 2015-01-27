@@ -2,7 +2,7 @@ body {
     width: 90%;
     margin: 0 auto;
     text-align: center;
-    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 header {
@@ -13,13 +13,19 @@ header {
 	padding-bottom: 5px;
 	text-transform: uppercase;
 }
-header h1 {
+.head {
 	color: white;
+	text-align: center;
+	margin: -150px 0 0 0;
+	z-index: 1;
+}
+
+#nav {
+	
 }
 
 .logo {
-	size: absolute;
-	vertical-align: center;
+	z-index: -1;
 }
 
 li a, a:visited {
@@ -32,10 +38,6 @@ a:hover {
 
 #content {
     overflow: auto;
-}
-
-#nav  li {
-	margin: 0 0 5px 0;
 }
 
 #nav, #feature, #footer {
