@@ -3,32 +3,102 @@
     <head>
         <title>CS:G - Home</title>
         <link rel="stylesheet" type="text/css" href="../css/style2.css">
+	<script type="text/javascript" src="../js/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="../js/coin-slider.min.js"></script>
     </head>
     <body>
-        <div id="banner"><h1>CS GUIDES</h1></div>
-            <ul class="menu">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="submit.html">Submit</a></li>
-                    <ul class="hidden">
-                        <li>Submit a Guide</li>
-                        <li>Submit an Application</li>
-                    </ul>
-                <li><a href="forums.html">Forums</a></li>
-                <li><a href="guides.html">Guides</a></li>
-                    <ul class="hidden">
-                        <li>Offensive Play</li>
-                        <li>Defensive Play</li>
-                        <li>Strategic Play</li>
-                        <li>Miscellaneous Play</li>
-                        <li>Community Gamemodes</li>
-                    </ul>
-            </ul>
-            <br style="clear:left"/>
+	<header>
+	<img class="logo" src="../img/logo.png" alt="CSG" longdesc="Welcome to CSG.">
+        <div id="header">
+            <div id="nav">
+                <ul class="csguides">
+		    <li><a href="index.html">Home</a></li>
+		    <li><a href="about.html">About Us</a></li>
+		        <div id="submenu">
+			    <ul>
+			        <li><a href="team.html">The Team</a></li>
+			        <li><a href="rules.html">Guidelines</a></li>
+			        <li><a href="aboutcsg.html">FAQ</a></li>
+			    </ul>
+			</div>
+		    <li><a href="community.html">Community</a></li>
+		        <div id="submenu">
+			    <ul>
+			        <li><a href="forums.html">Forums</a></li>
+			        <li><a href="support.html">Support</a></li>
+			        <li><a href="">TODO</a></li>
+			    </ul>
+			</div>
+		    <li><a href="guides.html">Guides</a></li>
+	        </ul>
+            </div>
         </div>
-        <h1 class="h1intro">Welcome to CS:Guides - Your source for Counter-Strike knowledge.</h1>
-        <h3>What is CS:G?</h3>
-        <p>CS:G is your source for Counter-Strike knowledge.<br />
-        We allow members of the Counter-Strike community to share their experience with the Counter-Strike series<br />
-        so that YOU can improve your game.</p>
+	</header>
+        <div id="content">
+            <div id="feature">
+		<div id="coin-slider">
+		    <a href="#" target="_blank">
+			<img src="../img/bg.png">
+			<span>
+			    Description for Image 1.
+		        </span>
+		    </a>
+		    <a href="#">
+			<img src="../img/background.png">
+			<span>
+			    Description for Image 2.
+		        </span>
+		    </a>
+		</div>
+            </div>
+	    <article>
+		<div class="article column1">
+		    <p>What is CSG?</p>
+		        <hr>
+		    <p class="articlebody">Counter-Strike Guides, or CSG for short, is your source for Counter-Strike knowledge. What we strive to provide is a community surrounding the knowledge submitted. We allow our registered CSG Users to submit guides using the Guides section of the website, but we also promote our favourite guides on the homepage.</p>
+		</div>
+	    </article>
+	    <article>
+		<div class="article column2">
+		    <p>Why CSG?</p>
+		        <hr>
+		    <p class="articlebody">But why should I use CSG, I hear you ask? Here at CSG we provide large collections of guides and information, supplied by our staff and users, </p>
+		</div>
+	    </article>
+	    <article>
+	        <div class="article column3">
+	            <p>Support Us</p>
+		        <hr>
+		    <p class="articlebody">There are numerous benefits to supporting us.</p>
+		</div>
+	    </article>
+	    </div>
+	</div>
+	<footer>
+	    <div id="footer">
+	        <p class="s">&copy; Synthh 2015 </p>
+		<div id="menu">
+		    <p class="menup">CS Guides</p>
+		    <ul class="csguides">
+		        <li><a href="home.html">Home</a></li>
+		        <li><a href="about.html">About Us</a></li>
+		        <li><a href="community.html">Community</a></li>
+        		<li><a href="guides.html">Guides</a></li>
+		    </ul>
+		</div>
+	    <div id="support">
+		<p class="supportp">Support</p>
+		<ul class="support">
+		    <li><a href="">FAQ</a></li>
+		    <li><a href="">Submit a Ticket</a></li>
+		    <li><a href="">Contact Us</a></li>
+		</ul>
+	    </div>
+	</footer>
+	<script type="text/javascript">
+	    $(document).ready(function() {
+		$('#coin-slider').coinslider({ width: 900, height: 290, navigation: true, delay: 5000, hoverPause: true, opacity: 0.7, titleSpeed 500 });
+	    });
+	</script>
     </body>
 </html>
